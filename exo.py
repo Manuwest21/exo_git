@@ -8,7 +8,7 @@ def jouer_coup(plateau:dict, joueur:str, coup:str) -> None:
         joueur (str): "O" ou "X"
         coup (str): Coordonnées de la forme "A1"
     """
-    plateau[coup[0].upper()][int(coup[1])] = joueurs
+    plateau[coup[0].upper()][int(coup[1])] = joueur
     
     
 def afficher_grille(plateau:dict) -> None:
@@ -80,3 +80,4 @@ def est_coup_valide(plateau:dict, coup:str) -> bool:
         return True
     else:
         return False
+    
