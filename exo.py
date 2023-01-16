@@ -81,7 +81,6 @@ def est_coup_valide(plateau:dict, coup:str) -> bool:
     else:
         return False
     
-<<<<<<< HEAD
 def est_pleine(plateau:dict) -> bool:
     """Fonction qui permet de savoir si la grille est pleine
 
@@ -132,5 +131,3 @@ while not termine:
             joueur = "O"
         else:
             joueur = "X"
-=======
->>>>>>> 22a12bd9e440b968cf70ccf50748a54083093d65
