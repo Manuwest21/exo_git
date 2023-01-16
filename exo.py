@@ -10,10 +10,10 @@ def jouer_coup(plateau:dict, joueur:str, coup:str) -> None:
     """
     plateau[coup[0].upper()][int(coup[1])] = joueurs
     
-
+    
 def afficher_grille(plateau:dict) -> None:
     """Fonction qui affiche la grille du morpion
-
+    
     Args:
         plateau (dict): Un plateau de jeu
     """
@@ -43,7 +43,7 @@ def est_gagnante(plateau:dict) -> bool:
     for cle in plateau:
         if plateau[cle][0] == plateau[cle][1] == plateau[cle][2] and plateau[cle][0] != None:
             return True
-        
+    
     # Vérification des colonnes
     for i in range(3):
         if plateau["A"][i] == plateau["B"][i] == plateau["C"][i] and plateau["A"][i] != None:
