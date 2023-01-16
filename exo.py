@@ -8,7 +8,7 @@ def jouer_coup(plateau:dict, joueur:str, coup:str) -> None:
         joueur (str): "O" ou "X"
         coup (str): Coordonnées de la forme "A1"
     """
-    plateau[coup[0].upper()][int(coup[1])] = joueurs
+    plateau[coup[0].upper()][int(coup[1])] = joueur
     
     
 def afficher_grille(plateau:dict) -> None:
@@ -81,6 +81,7 @@ def est_coup_valide(plateau:dict, coup:str) -> bool:
     else:
         return False
     
+<<<<<<< HEAD
 def est_pleine(plateau:dict) -> bool:
     """Fonction qui permet de savoir si la grille est pleine
 
@@ -131,3 +132,5 @@ while not termine:
             joueur = "O"
         else:
             joueur = "X"
+=======
+>>>>>>> 22a12bd9e440b968cf70ccf50748a54083093d65
